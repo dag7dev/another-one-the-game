@@ -30,8 +30,8 @@ def populate_db():
         domande.insert({"id": "8", "text_ita": "Pinocchio o Carlo, il burattino di Collodi era?",
         "answer": "Carlo"})
 
-        domande.insert({"id": "9", "text_ita": "Castagne o pigne, i frutti della quercia sono?",
-        "answer": "Castagne"})
+        domande.insert({"id": "9", "text_ita": "Castagne o ghiande, i frutti della quercia sono?",
+        "answer": "Ghiande"})
 
         domande.insert({"id": "10", "text_ita": "Blu o rosso, il profondo di Argento è Profondo?",
         "answer": "Blu"})
