@@ -93,7 +93,7 @@ def intro_message():
           "con una particolarita': non bisogna dare la risposta giusta\n"
           "bensi' la risposta sbagliata.\n\n"
           "Quando apparira' la domanda sullo schermo, bisognera' rispondere\n"
-          "in modo errato per andare avanti\n\n"
+          "AD ALTA VOCE in modo errato per andare avanti.\n\n"
           "Il gioco finisce quando si finiscono i tentativi massimi (3)\n"
           "oppure quando si indovinano dieci risposte sbagliate di fila\n")
 
