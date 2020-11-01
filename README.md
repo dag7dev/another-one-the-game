@@ -1,6 +1,8 @@
 # another-one-the-game
 game inspired by a popular Italian quiz tv show - entry for deepspeech-italian-contest
 
+This game has been submitted as an entry for the [deepspeech-italian-contest](https://github.com/MozillaItalia/DeepSpeech-Contest)
+
 ## How to install
 ```
 pip3 install -r requirements.txt
