@@ -105,11 +105,11 @@ def main():
     # game variables
     progressed = 0
     lives = 3  # the user has 3 lives
-    limit = 20  # the game ends when the user gives n answers
+    limit = 10  # the game ends when the user gives n answers
 
     # audio variables
     sample_rate = 16000
-    duration_of_recording = 2.5
+    duration_of_recording = 2
 
     # deepspeech checks
     check_for_ds()
