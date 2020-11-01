@@ -109,7 +109,7 @@ def main():
 
     # audio variables
     sample_rate = 16000
-    duration_of_recording = 2
+    duration_of_recording = 2.5
 
     # deepspeech checks
     check_for_ds()
