@@ -1,4 +1,5 @@
 import os
+import ssl
 import wget
 import wave
 import random
@@ -168,4 +169,5 @@ def main():
         exit(1)
 
 
+ssl._create_default_https_context = ssl._create_unverified_context
 main()
