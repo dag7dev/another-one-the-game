@@ -1,5 +1,5 @@
 wget~=3.2
-numpy~=1.19.3
+numpy~=1.17.3
 sounddevice~=0.4.1
 deepspeech~=0.8.2
 tinydb~=4.2.0
