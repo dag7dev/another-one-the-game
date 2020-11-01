@@ -152,13 +152,13 @@ def main():
         stt_text = ds.stt(audio).lower().replace(" ", "")
 
         # check the output
-        if similar(stt_text, random_questions[progressed][0].get("answer").lower()) >= 0.5:
+        if float(similar(stt_text, random_questions[progressed][0].get("answer").lower())) >= 0.5:
             progressed += 1
         else:
             print("SBAGLIATO! " + "\nHai detto:" + stt_text)
             print()
             lives -= 1
-        progressed = 0
+            progressed = 0
 
     if progressed == limit:
         print("COMPLIMENTI! Hai vinto!")
