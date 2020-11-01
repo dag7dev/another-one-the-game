@@ -31,7 +31,7 @@ def populate_db():
         "answer": "Carlo"})
 
         domande.insert({"id": "9", "text_ita": "Castagne o ghiande, i frutti della quercia sono?",
-        "answer": "Ghiande"})
+        "answer": "Castagne"})
 
         domande.insert({"id": "10", "text_ita": "Blu o rosso, il profondo di Argento è Profondo?",
         "answer": "Blu"})
