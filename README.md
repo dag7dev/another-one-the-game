@@ -3,7 +3,11 @@ game inspired by a popular Italian quiz tv show - entry for deepspeech-italian-c
 
 This game has been submitted as an entry for the [deepspeech-italian-contest](https://github.com/MozillaItalia/DeepSpeech-Contest)
 
+## Compatibility
+This game has been tested (and it is fully working) on Linux.
+
 ## How to install
+Clone the repo by using git or wheatever.
 ```
 pip3 install -r requirements.txt
 ```
