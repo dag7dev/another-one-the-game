@@ -157,7 +157,7 @@ def main():
             print("SBAGLIATO! " + "\nHai detto:" + stt_text)
             print()
             lives -= 1
-        # progressed = 0
+        progressed = 0
 
     if progressed == limit:
         print("COMPLIMENTI! Hai vinto!")
