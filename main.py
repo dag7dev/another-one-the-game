@@ -1,21 +1,21 @@
 import os
 import ssl
+import sys
 import wget
 import wave
+import json
 import random
 import tarfile
-import DBManager
 import numpy as np
 import sounddevice as sd
 from deepspeech import Model
-from tinydb import TinyDB, Query
 from scipy.io.wavfile import write
 from difflib import SequenceMatcher
 
 
 def generate_random_questions(questions, number_of_questions, limit):
     """
-    :param questions: questions from DB
+    :param questions: questions from file
     :param number_of_questions: total number of questions
     :param limit: how many questions needs to be generated
     :return: questions in a random order
@@ -24,16 +24,38 @@ def generate_random_questions(questions, number_of_questions, limit):
     random_questions = []
 
     try:
-        order = random.sample(range(1, number_of_questions + 1), 20)
+        order = random.sample(range(0, number_of_questions), limit)
     except Exception:
         print("Can't generate order.")
-        exit(1)
 
     for i in range(0, limit):
-        question = questions.search(Query().id == str(order[i]))
+        question = questions[order[i]]
         random_questions.append(question)
 
     return random_questions
+
+
+def check_for_files():
+    return False if not os.path.isfile("alphabet.txt") and not os.path.isfile("scorer") and not os.path.isfile("output_graph.pbmm") else False
+
+
+def check_for_xz():
+    return False if not os.path.isfile("model_tensorflow_it.tar.xz") else True
+
+
+def download_model():
+    print("Downloading Italian model...")
+    wget.download(
+        "https://github.com/MozillaItalia/DeepSpeech-Italian-Model/releases/download/2020.08.07"
+        "/model_tensorflow_it.tar.xz",
+        'model_tensorflow_it.tar.xz')
+
+
+def untar():
+    print("\nUnzipping model...")
+    tar = tarfile.open("model_tensorflow_it.tar.xz")
+    tar.extractall()
+    tar.close()
 
 
 def check_for_ds():
@@ -47,22 +69,18 @@ def check_for_ds():
 
     os.chdir("DS")
 
-    if not os.path.isfile("model_tensorflow_it.tar.xz"):
-        print("Downloading Italian model...")
-        wget.download(
-            "https://github.com/MozillaItalia/DeepSpeech-Italian-Model/releases/download/2020.08.07"
-            "/model_tensorflow_it.tar.xz",
-            'model_tensorflow_it.tar.xz')
+    flg_files = check_for_files()
+    flg_xz = check_for_xz()
 
-    if not os.path.isfile("alphabet.txt") and not os.path.isfile("scorer") and not os.path.isfile("output_graph.pbmm"):
-        print("\nUnzipping model...")
-        tar = tarfile.open("model_tensorflow_it.tar.xz")
-        tar.extractall()
-        tar.close()
+    if not flg_xz and not flg_files:
+        download_model()
+        untar()
+        os.remove("model_tensorflow_it.tar.xz")
+    elif flg_xz:
+        untar()
+        os.remove("model_tensorflow_it.tar.xz")
 
     os.chdir("..")
-
-    print()
 
 
 def similar(a, b):
@@ -109,17 +127,23 @@ def main():
 
     # audio variables
     sample_rate = 16000
-    duration_of_recording = 2.5
+    duration_of_recording = 3
 
     # deepspeech checks
     check_for_ds()
     ds = Model("DS/output_graph.pbmm")
 
     # questions
-    DBManager.populate_db()
-    questions = TinyDB('db/domande.json')
-    number_of_questions = len(questions.all())
-    random_questions = generate_random_questions(questions, number_of_questions, limit)
+    # open question file (at least one)
+    try:
+        fd = open("db/domande.json")
+    except FileNotFoundError:
+        "Il file non e' stato trovato. Inserisci un file domande.json e riprova"
+
+    # load file
+    questions = json.load(fd)
+    total_number_of_questions = len(questions)
+    random_questions = generate_random_questions(questions, total_number_of_questions, limit)
 
     clear()
 
@@ -134,7 +158,7 @@ def main():
 
     # main game loop
     while progressed < limit and lives > 0:
-        print(random_questions[progressed][0].get("text_ita"))
+        print(random_questions[progressed]["text"])
 
         # record the audio
         rec = sd.rec(int(duration_of_recording * sample_rate), dtype="int16", samplerate=sample_rate, channels=1)
@@ -152,7 +176,7 @@ def main():
         stt_text = ds.stt(audio).lower().replace(" ", "")
 
         # check the output
-        if float(similar(stt_text, random_questions[progressed][0].get("answer").lower())) >= 0.5:
+        if float(similar(stt_text, random_questions[progressed]["answer"].lower())) >= 0.5:
             progressed += 1
         else:
             print("SBAGLIATO! " + "\nHai detto:" + stt_text)
@@ -162,10 +186,12 @@ def main():
 
     if progressed == limit:
         print("COMPLIMENTI! Hai vinto!")
+        sys.exit(0)
         exit(0)
 
     if lives == 0:
         print("GAME OVER! Riprova!")
+        sys.exit(0)
         exit(1)
 
 
