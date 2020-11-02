@@ -14,15 +14,7 @@ pip3 install -r requirements.txt
 
 Install portaudio (for Debian based):
 ```
-sudo apt install libportaudio2
-```
-if it doesn't work:
-```
-sudo apt install libasound-dev
-```
-or try:
-```
-sudo apt install libportaudio-ocaml
+sudo apt install libportaudio2 libasound-dev libportaudio-ocaml
 ```
 
 ## How to run
