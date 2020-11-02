@@ -36,11 +36,11 @@ def generate_random_questions(questions, number_of_questions, limit):
 
 
 def check_for_files():
-    return False if not os.path.isfile("alphabet.txt") and not os.path.isfile("scorer") and not os.path.isfile("output_graph.pbmm") else False
+    return True if os.path.isfile("alphabet.txt") and os.path.isfile("scorer") and os.path.isfile("output_graph.pbmm") else False
 
 
 def check_for_xz():
-    return False if not os.path.isfile("model_tensorflow_it.tar.xz") else True
+    return True if os.path.isfile("model_tensorflow_it.tar.xz") else False
 
 
 def download_model():
@@ -141,7 +141,11 @@ def main():
         "Il file non e' stato trovato. Inserisci un file domande.json e riprova"
 
     # load file
-    questions = json.load(fd)
+    try:
+        questions = json.load(fd)
+    except ValueError:
+        print("Non e' un file JSON. Prova con un file domande.json e delle domande!")
+
     total_number_of_questions = len(questions)
     random_questions = generate_random_questions(questions, total_number_of_questions, limit)
 
@@ -154,7 +158,7 @@ def main():
         clear()
         print("Alla prossima!")
         print()
-        exit(1)
+        sys.exit(0)
 
     # main game loop
     while progressed < limit and lives > 0:
@@ -187,12 +191,10 @@ def main():
     if progressed == limit:
         print("COMPLIMENTI! Hai vinto!")
         sys.exit(0)
-        exit(0)
 
     if lives == 0:
         print("GAME OVER! Riprova!")
         sys.exit(0)
-        exit(1)
 
 
 ssl._create_default_https_context = ssl._create_unverified_context
