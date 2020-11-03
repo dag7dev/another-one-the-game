@@ -134,17 +134,17 @@ def main():
     ds = Model("DS/output_graph.pbmm")
 
     # questions
+    questions = None
+
     # open question file (at least one)
-    try:
-        fd = open("db/domande.json")
-    except FileNotFoundError:
-        "Il file non e' stato trovato. Inserisci un file domande.json e riprova"
+    fd = open("db/domande.json")
 
     # load file
     try:
         questions = json.load(fd)
     except ValueError:
         print("Non e' un file JSON. Prova con un file domande.json e delle domande!")
+
 
     total_number_of_questions = len(questions)
     random_questions = generate_random_questions(questions, total_number_of_questions, limit)
