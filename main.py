@@ -151,15 +151,6 @@ def main():
 
     clear()
 
-    # what the user is going to do
-    r = intro_message().lower()
-
-    if r != "s" and r != "":
-        clear()
-        print("Alla prossima!")
-        print()
-        sys.exit(0)
-
     # main game loop
     while progressed < limit and lives > 0:
         print(random_questions[progressed]["text"])
@@ -190,12 +181,22 @@ def main():
 
     if progressed == limit:
         print("COMPLIMENTI! Hai vinto!")
-        sys.exit(0)
 
     if lives == 0:
         print("GAME OVER! Riprova!")
-        sys.exit(0)
 
 
 ssl._create_default_https_context = ssl._create_unverified_context
-main()
+
+# what the user is going to do
+r = intro_message().lower()
+
+if r != "s" and r != "":
+    clear()
+    print("Alla prossima!")
+    print()
+    sys.exit(0)
+
+while r == "s" or r == "":
+    main()
+    r = input("Altra partita? [S/n]: ")

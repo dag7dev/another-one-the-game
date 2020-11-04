@@ -106,8 +106,8 @@
         },
         {
                 "id":"22",
-                "text":"Cellulosa o Cartillagine, di cosa è fatta la carta ?",
-                "answer":"Cartillagine"
+                "text":"Cellulosa o cartilagine, di cosa è fatta la carta ?",
+                "answer":"Cartilagine"
         },
         {
                 "id":"23",
@@ -121,8 +121,8 @@
         },
         {
                 "id":"25",
-                "text":"Volpe o Panda Rosso ?",
-                "answer":"Volpe"
+                "text":"Volpe o Fenice, qual e' l'animale di Firefox ?",
+                "answer":"Fenice"
         },
         {
                 "id":"26",
@@ -136,17 +136,17 @@
         },
         {
                 "id":"28",
-                "text":"Ciro o Giangi, chi e' di Napoli ?",
+                "text":"Ciro o Giangi, quale nome e' di Napoli ?",
                 "answer":"Giangi"
         },
         {
                 "id":"29",
-                "text":"Piper o Magnolia, chi fa la giornalista ?",
-                "answer":"Magnolia"
+                "text":"Maccio o Ciro, chi dei due fa parte dei The Jackal?",
+                "answer":"Maccio"
         },
         {
                 "id":"30",
-                "text":"Duccio o Alessandro, chi apre tutto ?",
+                "text":"Duccio o Alessandro, chi apre tutto in Boris?",
                 "answer":"Alessandro"
         },
         {
@@ -156,12 +156,12 @@
         },
         {
                 "id":"32",
-                "text":"Grafite o Amianto, cosa c'e' nelle matite ?",
+                "text":"Grafite o amianto, cosa c'e' nelle matite ?",
                 "answer":"Amianto"
         },
         {
                 "id":"33",
-                "text":"Lanciafiamme o Panzerotti, cosa userebbe De Luca ?",
+                "text":"Lanciafiamme o Panzerotti, quale prodotto e' di Elon Musk ?",
                 "answer":"Panzerotti"
         },
         {
@@ -176,17 +176,22 @@
         },
         {
                 "id":"36",
-                "text":"Bamboo o Canapa, di cosa e' fatto il cappello della vecchia bretone ?",
+                "text":"Bamboo o Canapa, lo mangiano i panda",
                 "answer":"Canapa"
         },
         {
                 "id":"37",
-                "text":"Mango o Zucchero, chi canta Oro ?",
+                "text":"Mango o Zucchero, chi canta La Rondine?",
                 "answer":"Zucchero"
         },
         {
                 "id":"38",
-                "text":"Arizona o Florida, in che stato si trova Orlando ?",
+                "text":"Arizona o Florida, in che stato si trova Orlando?",
                 "answer":"Arizona"
+        },
+        {
+                "id":"38",
+                "text":"Zero o Uno, cognome del cantante italiano Renato?",
+                "answer":"Uno"
         }
 ]
