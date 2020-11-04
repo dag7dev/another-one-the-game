@@ -7,15 +7,20 @@ This game has been submitted as an entry for the [deepspeech-italian-contest](ht
 This game has been tested (and it is fully working) on Linux or macOS.
 
 ## How to install
-Clone the repo by using git or wheatever.
+- Install portaudio (for Debian based the instructions below - other distros, use a search engine):
+```
+sudo apt install libportaudio2 libasound-dev libportaudio-ocaml
+```
+
+- Download latest zip available (here: https://github.com/dag7dev/another-one-the-game/releases)
+
+**OR**
+
+- Clone the repo by using git or wheatever.
 ```
 pip3 install -r requirements.txt
 ```
 
-Install portaudio (for Debian based):
-```
-sudo apt install libportaudio2 libasound-dev libportaudio-ocaml
-```
 
 ## How to run
 Run:
