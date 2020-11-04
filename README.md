@@ -11,19 +11,25 @@ This game has been tested (and it is fully working) on Linux or macOS.
 ```
 sudo apt install libportaudio2 libasound-dev libportaudio-ocaml
 ```
+**AND**
 
 - Download latest zip available (here: https://github.com/dag7dev/another-one-the-game/releases)
+- Unzip it and run ```./another-one-x-x-x```
 
 **OR**
 
-- Clone the repo by using git or wheatever.
+- Install portaudio as well, clone the repo by using git or wheatever.
+- Type:
 ```
 pip3 install -r requirements.txt
 ```
-
+on your terminal
 
 ## How to run
-Run:
+If you downloaded the zip, run:
+```./another-one-x-x-x```
+
+Otherwise in the root directory:
 ```
 python3 main.py
 ```
