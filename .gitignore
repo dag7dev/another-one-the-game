@@ -1,3 +1,7 @@
+build
+dist
+*.spec
+
 *.iml
 .idea
 __pycache__/
@@ -7,7 +11,6 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 DS/
-db/
 
 # Environments
 .env

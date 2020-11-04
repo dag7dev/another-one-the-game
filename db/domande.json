@@ -1,0 +1,197 @@
+[
+        {
+                "id":"1",
+                "text":"Marconi o Leopoldi la prima trasmissione radio è stata di?",
+                "answer":"Leopoldi"
+        },
+        {
+                "id":"2",
+                "text":"Bella o Biancaneve, celebre film del 37 è?",
+                "answer":"Bella"
+        },
+        {
+                "id":"3",
+                "text":"Richard o Riccardo, qual è il nome del celebre chitarrista romano undeground Benson?",
+                "answer":"Riccardo"
+        },
+        {
+                "id":"4",
+                "text":"Romualdo o Romeo, quella celebre è la storia di Giulietta e?",
+                "answer":"Romualdo"
+        },
+        {
+                "id":"5",
+                "text":"Siracusa o Torino, la mole antonelliana si trova a?",
+                "answer":"Siracusa"
+        },
+        {
+                "id":"6",
+                "text":"Milano o Modena, il capoluogo della Lombardia è?",
+                "answer":"Modena"
+        },
+        {
+                "id":"7",
+                "text":"Tonino o Virginio, il vero nome di Gerry Scotti è?",
+                "answer":"Tonino"
+        },
+        {
+                "id":"8",
+                "text":"Pinocchio o Carlo, il burattino di Collodi era?",
+                "answer":"Carlo"
+        },
+        {
+                "id":"9",
+                "text":"Castagne o ghiande, i frutti della quercia sono?",
+                "answer":"Castagne"
+        },
+        {
+                "id":"10",
+                "text":"Blu o rosso, il profondo di Argento è Profondo?",
+                "answer":"Blu"
+        },
+        {
+                "id":"11",
+                "text":"Alfonso o Luigi, il nome di Pirandello era?",
+                "answer":"Alfonso"
+        },
+        {
+                "id":"12",
+                "text":"Lino o Gennaro, il Vaireti degli Osanna si chiama?",
+                "answer":"Gennaro"
+        },
+        {
+                "id":"13",
+                "text":"Binocolo o occhiali, per osservare le stelle usi?",
+                "answer":"Occhiali"
+        },
+        {
+                "id":"14",
+                "text":"Lupin o Diabolik, chi dei due ladri è italiano?",
+                "answer":"Lupin"
+        },
+        {
+                "id":"15",
+                "text":"Simone o Giuda, chi tradì Gesù secondo il Nuovo Testamento?",
+                "answer":"Simone"
+        },
+        {
+                "id":"16",
+                "text":"Tre o trenta, i libri in una trilogia sono?",
+                "answer":"Trenta"
+        },
+        {
+                "id":"17",
+                "text":"Holmes o Poirot, il detective di Agata Christie è?",
+                "answer":"Poirot"
+        },
+        {
+                "id":"18",
+                "text":"Giacomo o Antonio, l'illusionista italiano Casanova si chiama?",
+                "answer":"Giacomo"
+        },
+        {
+                "id":"19",
+                "text":"Passato o cremino, di zucca esiste il?",
+                "answer":"Cremino"
+        },
+        {
+                "id":"20",
+                "text":"Repubblica o Monarchia, qual è il celebre quotidiano Italiano?",
+                "answer":"Monarchia"
+        },
+        {
+                "id":"21",
+                "text":"Palmizio o Giuliano, di chi sono i trattori ?",
+                "answer":"Giuliano"
+        },
+        {
+                "id":"22",
+                "text":"Cellulosa o cartilagine, di cosa è fatta la carta ?",
+                "answer":"Cartilagine"
+        },
+        {
+                "id":"23",
+                "text":"Prosciutto o Guanciale, con cosa si fa la carbonara ?",
+                "answer":"Prosciutto"
+        },
+        {
+                "id":"24",
+                "text":"Adamo o Eva, chi ha mangiato la mela ?",
+                "answer":"Adamo"
+        },
+        {
+                "id":"25",
+                "text":"Volpe o Fenice, qual e' l'animale di Firefox ?",
+                "answer":"Fenice"
+        },
+        {
+                "id":"26",
+                "text":"Vivaldi o Puccini, chi ha composto la Primavera ?",
+                "answer":"Puccini"
+        },
+        {
+                "id":"27",
+                "text":"Itala o Rene', chi dirige gli Occhi del Cuore ?",
+                "answer":"Itala"
+        },
+        {
+                "id":"28",
+                "text":"Ciro o Giangi, quale nome e' di Napoli ?",
+                "answer":"Giangi"
+        },
+        {
+                "id":"29",
+                "text":"Maccio o Ciro, chi dei due fa parte dei The Jackal?",
+                "answer":"Maccio"
+        },
+        {
+                "id":"30",
+                "text":"Duccio o Alessandro, chi apre tutto in Boris?",
+                "answer":"Alessandro"
+        },
+        {
+                "id":"31",
+                "text":"Manzoni o Dante, chi ha scritto la Divina Commedia ?",
+                "answer":"Manzoni"
+        },
+        {
+                "id":"32",
+                "text":"Grafite o amianto, cosa c'e' nelle matite ?",
+                "answer":"Amianto"
+        },
+        {
+                "id":"33",
+                "text":"Lanciafiamme o Panzerotti, quale prodotto e' di Elon Musk ?",
+                "answer":"Panzerotti"
+        },
+        {
+                "id":"34",
+                "text":"Firenze o Torino, quale fu' la prima capitale del Regno d'Italia ?",
+                "answer":"Firenze"
+        },
+        {
+                "id":"35",
+                "text":"Canada o Russia, qual'e' la nazione più grande ?",
+                "answer":"Canada"
+        },
+        {
+                "id":"36",
+                "text":"Bamboo o Canapa, lo mangiano i panda",
+                "answer":"Canapa"
+        },
+        {
+                "id":"37",
+                "text":"Mango o Zucchero, chi canta La Rondine?",
+                "answer":"Zucchero"
+        },
+        {
+                "id":"38",
+                "text":"Arizona o Florida, in che stato si trova Orlando?",
+                "answer":"Arizona"
+        },
+        {
+                "id":"38",
+                "text":"Zero o Uno, cognome del cantante italiano Renato?",
+                "answer":"Uno"
+        }
+]

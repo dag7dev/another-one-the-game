@@ -4,12 +4,17 @@ game inspired by a popular Italian quiz tv show - entry for deepspeech-italian-c
 This game has been submitted as an entry for the [deepspeech-italian-contest](https://github.com/MozillaItalia/DeepSpeech-Contest)
 
 ## Compatibility
-This game has been tested (and it is fully working) on Linux.
+This game has been tested (and it is fully working) on Linux or macOS.
 
 ## How to install
 Clone the repo by using git or wheatever.
 ```
 pip3 install -r requirements.txt
+```
+
+Install portaudio (for Debian based):
+```
+sudo apt install libportaudio2 libasound-dev libportaudio-ocaml
 ```
 
 ## How to run
