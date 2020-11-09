@@ -3,6 +3,9 @@ game inspired by a popular Italian quiz tv show - entry for deepspeech-italian-c
 
 This game has been submitted as an entry for the [deepspeech-italian-contest](https://github.com/MozillaItalia/DeepSpeech-Contest)
 
+## Screenshot
+![immagine](https://user-images.githubusercontent.com/44711271/98537256-49dcc080-2289-11eb-8e3a-b7675d2b8bf9.png)
+
 ## Compatibility
 This game has been tested (and it is fully working) on Linux or macOS.
 
