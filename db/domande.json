@@ -1,7 +1,7 @@
 [
         {
                 "id":"1",
-                "text":"Marconi o Leopoldi la prima trasmissione radio è stata di?",
+                "text":"Marconi o Leopoldi, la prima trasmissione radio è stata di?",
                 "answer":"Leopoldi"
         },
         {
@@ -11,7 +11,7 @@
         },
         {
                 "id":"3",
-                "text":"Richard o Riccardo, qual è il nome del celebre chitarrista romano undeground Benson?",
+                "text":"Richard o Riccardo, qual è il nome del chitarrista romano Benson?",
                 "answer":"Riccardo"
         },
         {
@@ -41,12 +41,12 @@
         },
         {
                 "id":"9",
-                "text":"Castagne o ghiande, i frutti della quercia sono?",
+                "text":"Castagne o Ghiande, i frutti della quercia sono?",
                 "answer":"Castagne"
         },
         {
                 "id":"10",
-                "text":"Blu o rosso, il profondo di Argento è Profondo?",
+                "text":"Blu o Rosso, il profondo di Argento è Profondo?",
                 "answer":"Blu"
         },
         {
@@ -61,7 +61,7 @@
         },
         {
                 "id":"13",
-                "text":"Binocolo o occhiali, per osservare le stelle usi?",
+                "text":"Binocolo o Occhiali, per osservare le stelle usi?",
                 "answer":"Occhiali"
         },
         {
@@ -76,7 +76,7 @@
         },
         {
                 "id":"16",
-                "text":"Tre o trenta, i libri in una trilogia sono?",
+                "text":"Tre o Trenta, i libri in una trilogia sono?",
                 "answer":"Trenta"
         },
         {
@@ -91,7 +91,7 @@
         },
         {
                 "id":"19",
-                "text":"Passato o cremino, di zucca esiste il?",
+                "text":"Passato o Cremino, di zucca esiste il?",
                 "answer":"Cremino"
         },
         {
@@ -101,42 +101,42 @@
         },
         {
                 "id":"21",
-                "text":"Palmizio o Giuliano, di chi sono i trattori ?",
-                "answer":"Giuliano"
+                "text":"Nero o Rosso, quale colore non è nell'arcobaleno?",
+                "answer":"Rosso"
         },
         {
                 "id":"22",
-                "text":"Cellulosa o cartilagine, di cosa è fatta la carta ?",
+                "text":"Cellulosa o Cartilagine, di cosa è fatta la carta?",
                 "answer":"Cartilagine"
         },
         {
                 "id":"23",
-                "text":"Prosciutto o Guanciale, con cosa si fa la carbonara ?",
+                "text":"Prosciutto o Guanciale, con cosa si fa la carbonara?",
                 "answer":"Prosciutto"
         },
         {
                 "id":"24",
-                "text":"Adamo o Eva, chi ha mangiato la mela ?",
+                "text":"Adamo o Eva, chi ha mangiato la mela?",
                 "answer":"Adamo"
         },
         {
                 "id":"25",
-                "text":"Volpe o Fenice, qual e' l'animale di Firefox ?",
+                "text":"Volpe o Fenice, qual è l'animale di Firefox?",
                 "answer":"Fenice"
         },
         {
                 "id":"26",
-                "text":"Vivaldi o Puccini, chi ha composto la Primavera ?",
+                "text":"Vivaldi o Puccini, chi ha composto la Primavera?",
                 "answer":"Puccini"
         },
         {
                 "id":"27",
-                "text":"Itala o Rene', chi dirige gli Occhi del Cuore ?",
+                "text":"Itala o Renè, chi dirige gli Occhi del Cuore?",
                 "answer":"Itala"
         },
         {
                 "id":"28",
-                "text":"Ciro o Giangi, quale nome e' di Napoli ?",
+                "text":"Ciro o Giangi, quale nome è di Napoli ?",
                 "answer":"Giangi"
         },
         {
@@ -146,32 +146,32 @@
         },
         {
                 "id":"30",
-                "text":"Duccio o Alessandro, chi apre tutto in Boris?",
+                "text":"Duccio o Alessandro, chi va spesso a pensare in Boris?",
                 "answer":"Alessandro"
         },
         {
                 "id":"31",
-                "text":"Manzoni o Dante, chi ha scritto la Divina Commedia ?",
+                "text":"Manzoni o Dante, chi ha scritto la Divina Commedia?",
                 "answer":"Manzoni"
         },
         {
                 "id":"32",
-                "text":"Grafite o amianto, cosa c'e' nelle matite ?",
+                "text":"Grafite o Amianto, cosa c'è nelle matite?",
                 "answer":"Amianto"
         },
         {
                 "id":"33",
-                "text":"Lanciafiamme o Panzerotti, quale prodotto e' di Elon Musk ?",
+                "text":"Lanciafiamme o Panzerotti, quale prodotto è di Elon Musk ?",
                 "answer":"Panzerotti"
         },
         {
                 "id":"34",
-                "text":"Firenze o Torino, quale fu' la prima capitale del Regno d'Italia ?",
+                "text":"Firenze o Torino, quale fu la prima capitale del Regno d'Italia ?",
                 "answer":"Firenze"
         },
         {
                 "id":"35",
-                "text":"Canada o Russia, qual'e' la nazione più grande ?",
+                "text":"Canada o Russia, qual è la nazione più grande ?",
                 "answer":"Canada"
         },
         {
