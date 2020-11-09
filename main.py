@@ -3,6 +3,8 @@ import os
 import wave
 import PySimpleGUI as sg
 import sounddevice as sd
+from scipy.io.wavfile import write
+
 import utils
 import numpy as np
 from deepspeech import Model
@@ -143,7 +145,7 @@ while True:
         window.refresh()
         rec = sd.rec(int(duration_of_recording * sample_rate), dtype="int16", samplerate=sample_rate, channels=1)
         sd.wait()
-        utils.write('DS/out.wav', sample_rate, rec)
+        write('DS/out.wav', sample_rate, rec)
 
         window['lbl_deep'].update("Elaboro...")
         window.refresh()
